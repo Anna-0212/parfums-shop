@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #A7D2CB;
 }
-
-.App-link {
-  color: #61dafb;
+.shop-cart {
+  justify-content: flex-end;
+  padding-right: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: #744456fe;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: lighter;
+}
+h2 {
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: lighter;
+  color: #C98474;
+  font-size: 25px;
+}
+h3 {
+  color: #744456fe;
+  font-family: 'Noto Sans Mono', monospace;
+  font-size: 25px;
+}
+p {
+  margin-left: 70px;
+  margin-right: 70px;
+  font-family: 'Noto Sans Mono', monospace;
+  font-size: 18px;
+}
+.shopping-cart {
+  width: 40px;
+  height: 40px;
+  border: none;
+  box-shadow: none;
+  margin-right: 5px;
+}
+button {
+  background: #C98474;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: #6b4251fe;
+  text-transform: uppercase;
+  font-family: 'Noto Sans Mono', monospace;
+}
+.btnShow {
+  background-color: #A7D2CB;
+  color: rgb(64, 63, 63);
+  text-transform: none;
+  padding: 5px;
+}
+img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px  rgb(109, 107, 107);
+}
+.price {
+  font-size: 20px;
+  color: #744456fe;
+}
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
