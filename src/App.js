@@ -23,8 +23,8 @@ const showTextClick = (item) => {
 
   return (
     <div>
-      <div className="container">
-        <h1>Parfum's butik </h1>
+      <div className="header">
+        <h1>My Perfume wish list</h1>
       </div>
       <div className="container shop-cart">
         <img className="shopping-cart"src={image} alt="shopping-cart" />
@@ -44,7 +44,7 @@ const showTextClick = (item) => {
       </div>
 
       <div className="container">
-        <p>{showText ? description : description.substring(0, 200) + "..."} <button onClick = {() => showTextClick(item)} className="btnShow"> {showText ? "Show less" : "Show more"}</button> </p>
+        <p className="text"> {showText ? description : description.substring(0, 200) + "..."} <button onClick = {() => showTextClick(item)} className="btnShow"> {showText ? "Show less" : "Show more"}</button> </p>
       </div>
       
       <div className="container">
@@ -54,9 +54,11 @@ const showTextClick = (item) => {
       <div className="container">
         <button onClick = {() => removeParfum(id)}> REMOVE</button>
       </div>
-
+      <div className="container">
+        <hr />
       </div>
-        )
+    </div>
+  )
 })}
 
 <div className='container'>
